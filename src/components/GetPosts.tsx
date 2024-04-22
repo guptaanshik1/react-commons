@@ -7,12 +7,24 @@ const GetPosts = () => {
   const { addPostMutate, addPostData } = useAddPost();
 
   const handleSubmit = () => {
-    addPostMutate({
-      id: 101,
-      userId: 101,
-      title: "testing custom hook mutation",
-      body: "body for testing custom mutation",
-    });
+    addPostMutate(
+      {
+        id: 101,
+        userId: 101,
+        title: "testing custom hook mutation",
+        body: "body for testing custom mutation",
+      },
+      {
+        onSuccess: () => {
+          addPostMutate({
+            id: 102,
+            userId: 102,
+            title: "testing custom hook mutation",
+            body: "body for testing custom mutation",
+          });
+        },
+      }
+    );
   };
 
   console.log({ addPostData });

@@ -2,7 +2,7 @@ import useQuery from "./common/useQuery";
 
 const useGetPost = (postId: number) => {
   const pathVariables = { postId };
-  console.log({ pathVariables });
+
   const {
     data: postData,
     isLoading: isPostDataLoading,

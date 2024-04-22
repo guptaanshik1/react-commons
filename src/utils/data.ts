@@ -5,4 +5,9 @@ export interface IPost {
   body: string;
 }
 
+export interface IMutationOptions {
+  onSuccess?: <T>(data?: T) => void;
+  onError?: <T>(data?: T) => void;
+}
+
 export type TPathVariables = Record<string, any>;
