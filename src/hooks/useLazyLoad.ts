@@ -1,6 +1,7 @@
 import { lazy } from "react";
 
 // useLazyLoad("../components/GetPosts", "GetPosts")
+// useTransition
 
 interface IProps {
   path: string;

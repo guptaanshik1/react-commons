@@ -1,9 +1,11 @@
-import GetPosts from "./components/GetPosts";
+import PlayTimer from "./components/PlayTimer";
 
 const App = () => {
   return (
-    <div>
-      <GetPosts />
+    <div style={{ margin: "auto", textAlign: "center" }}>
+      {/* <GetPosts /> */}
+      {/* <TimeoutComponent /> */}
+      <PlayTimer />
     </div>
   );
 };
