@@ -44,3 +44,15 @@ export interface IComment {
 export interface ISearchCache {
   [key: string]: Array<string>;
 }
+
+export interface IAccordion {
+  id: number;
+  title: string;
+  subAccordions?: IAccordion[];
+}
+
+export interface IChatMessage {
+  id: number;
+  name: string;
+  message: string;
+}
