@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import GetPosts from "./components/GetPosts";
 import GetUser from "./components/GetUser";
 import HigherOrder from "./components/HigherOrder";
+import ArraysOfFunctions from "./components/ArraysOfFunctions";
 
 const App = () => {
   const [name, setName] = useState("John");
@@ -27,6 +28,7 @@ const App = () => {
         <CommentsContainer />
         <AccordionContainer />
         <Home />
+        <ArraysOfFunctions />
       </UserData.Provider>
     </div>
   );
