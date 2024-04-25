@@ -32,7 +32,7 @@ const LiveChatContainer = () => {
       return [
         ...prev,
         {
-          id: messages[messages?.length - 1].id + 1,
+          id: messages[messages?.length - 1]?.id + 1,
           name: "Anshik Gupta",
           message: liveMessageRef.current?.value!,
         },

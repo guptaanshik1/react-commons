@@ -2,14 +2,9 @@ import { IAccordion } from "../../utils/data";
 
 interface IProps {
   accordion: IAccordion;
-  onToggle: (id: number) => void;
 }
 
-const Accordion = ({ accordion, onToggle }: IProps) => {
-  const handleToggle = () => {
-    onToggle(accordion?.id);
-  };
-
+const Accordion = ({ accordion }: IProps) => {
   return (
     <div
       style={{
@@ -18,7 +13,6 @@ const Accordion = ({ accordion, onToggle }: IProps) => {
         cursor: "pointer",
         marginBottom: "18px",
       }}
-      onClick={handleToggle}
     >
       {accordion?.title}
     </div>
