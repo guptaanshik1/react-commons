@@ -7,13 +7,17 @@ import SearchBar from "./components/SearchBar";
 import Tabs from "./components/Tabs";
 import { UserData } from "./contexts/useGlobalContext";
 import Home from "./components/Home";
+import GetPosts from "./components/GetPosts";
+import GetUser from "./components/GetUser";
+import HigherOrder from "./components/HigherOrder";
 
 const App = () => {
   const [name, setName] = useState("John");
 
   return (
     <div style={{ margin: "auto", textAlign: "center" }}>
-      {/* <GetPosts /> */}
+      <GetUser />
+      <GetPosts />
       {/* <TimeoutComponent /> */}
       <UserData.Provider value={{ name, setName }}>
         <LiveChatContainer />

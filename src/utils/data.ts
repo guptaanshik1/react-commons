@@ -56,3 +56,8 @@ export interface IChatMessage {
   name: string;
   message: string;
 }
+
+export interface IUser {
+  id: number;
+  name: string;
+}

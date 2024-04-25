@@ -1,5 +1,6 @@
 import useAddPost from "../hooks/useAddPost";
 import useGetPosts from "../hooks/useGetPosts";
+import HigherOrder from "./HigherOrder";
 
 const GetPosts = () => {
   const { isPostsLoading, postsData } = useGetPosts();
@@ -33,11 +34,15 @@ const GetPosts = () => {
 
   return (
     <div>
+      <h1>Posts</h1>
       {postsData &&
-        postsData?.map((post) => <div key={post?.id}>{post?.title}</div>)}
+        postsData
+          ?.slice(0, 10)
+          ?.map((post) => <div key={post?.id}>{post?.title}</div>)}
       <button onClick={handleSubmit}></button>
     </div>
   );
 };
 
-export default GetPosts;
+const GetPostsComp = HigherOrder("Posts");
+export default GetPostsComp;
