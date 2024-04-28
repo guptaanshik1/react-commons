@@ -13,6 +13,7 @@ import ArraysOfFunctions from "./components/ArraysOfFunctions";
 import CounterHoc from "./components/Counter/CounterHoc";
 import Counter from "./components/Counter/Counter";
 import PhoneNumber from "./components/PhoneOtp/PhoneNumber";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
 
 const App = () => {
   const [name, setName] = useState("John");
@@ -26,16 +27,17 @@ const App = () => {
       <GetPosts />
       <CounterHoc Comp={Counter} />
       <PhoneNumber />
+      <ProgressBar />
       {/* <TimeoutComponent /> */}
       <UserData.Provider value={{ name, setName }}>
         {/* <LiveChatContainer /> */}
         <Tabs />
-        <PlayTimer />
+        {/* <PlayTimer />
         <SearchBar />
         <CommentsContainer />
         <AccordionContainer />
         <Home />
-        <ArraysOfFunctions />
+        <ArraysOfFunctions /> */}
       </UserData.Provider>
     </div>
   );

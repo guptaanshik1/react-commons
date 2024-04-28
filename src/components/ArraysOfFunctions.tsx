@@ -7,7 +7,6 @@ const ArraysOfFunctions = () => {
     () => fnsArray.map((fn) => fn(2, 2)),
     [fnsArray]
   );
-  console.log(callFunctions());
 
   useEffect(() => {
     callFunctions();

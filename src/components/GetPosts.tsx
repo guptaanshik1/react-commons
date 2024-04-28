@@ -28,8 +28,6 @@ const GetPosts = () => {
     );
   };
 
-  console.log({ addPostData });
-
   if (isPostsLoading) return <h1>Loading....</h1>;
 
   return (
