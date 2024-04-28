@@ -61,3 +61,8 @@ export interface IUser {
   id: number;
   name: string;
 }
+
+export enum PhoneOtpSteps {
+  ENTER_PHONE_NUMBER = "enterPhoneNumber",
+  ENTER_OTP = "enterOtp",
+}

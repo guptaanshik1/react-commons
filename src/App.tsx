@@ -9,19 +9,26 @@ import { UserData } from "./contexts/useGlobalContext";
 import Home from "./components/Home";
 import GetPosts from "./components/GetPosts";
 import GetUser from "./components/GetUser";
-import HigherOrder from "./components/HigherOrder";
 import ArraysOfFunctions from "./components/ArraysOfFunctions";
+import CounterHoc from "./components/Counter/CounterHoc";
+import Counter from "./components/Counter/Counter";
+import PhoneNumber from "./components/PhoneOtp/PhoneNumber";
 
 const App = () => {
   const [name, setName] = useState("John");
 
   return (
-    <div style={{ margin: "auto", textAlign: "center" }}>
+    <div
+      className="flex flex-col"
+      style={{ margin: "auto", textAlign: "center" }}
+    >
       <GetUser />
       <GetPosts />
+      <CounterHoc Comp={Counter} />
+      <PhoneNumber />
       {/* <TimeoutComponent /> */}
       <UserData.Provider value={{ name, setName }}>
-        <LiveChatContainer />
+        {/* <LiveChatContainer /> */}
         <Tabs />
         <PlayTimer />
         <SearchBar />
