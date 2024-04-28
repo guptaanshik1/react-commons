@@ -66,3 +66,19 @@ export enum PhoneOtpSteps {
   ENTER_PHONE_NUMBER = "enterPhoneNumber",
   ENTER_OTP = "enterOtp",
 }
+
+export interface IQuestionsData {
+  question: string;
+  answerOptions: Array<IAnswerOptions>;
+}
+
+export interface IAnswerOptions {
+  text: string;
+  isCorrect: boolean;
+}
+
+export interface IUserAnswer {
+  question: string;
+  answer: string;
+  isCorrectAnswerGiven: boolean;
+}

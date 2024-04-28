@@ -14,6 +14,7 @@ import CounterHoc from "./components/Counter/CounterHoc";
 import Counter from "./components/Counter/Counter";
 import PhoneNumber from "./components/PhoneOtp/PhoneNumber";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
+import Quiz from "./components/Quiz/Quiz";
 
 const App = () => {
   const [name, setName] = useState("John");
@@ -28,6 +29,7 @@ const App = () => {
       <CounterHoc Comp={Counter} />
       <PhoneNumber />
       <ProgressBar />
+      <Quiz />
       {/* <TimeoutComponent /> */}
       <UserData.Provider value={{ name, setName }}>
         {/* <LiveChatContainer /> */}
