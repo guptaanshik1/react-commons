@@ -15,6 +15,8 @@ import Counter from "./components/Counter/Counter";
 import PhoneNumber from "./components/PhoneOtp/PhoneNumber";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import Quiz from "./components/Quiz/Quiz";
+import Incrementer from "./components/Incrementer";
+import MemoPolyfill from "./components/MemoPolyfill";
 
 const App = () => {
   const [name, setName] = useState("John");
@@ -30,6 +32,8 @@ const App = () => {
       <PhoneNumber />
       <ProgressBar />
       <Quiz />
+      <Incrementer />
+      <MemoPolyfill />
       {/* <TimeoutComponent /> */}
       <UserData.Provider value={{ name, setName }}>
         {/* <LiveChatContainer /> */}
